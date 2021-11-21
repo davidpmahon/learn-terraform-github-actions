@@ -13,13 +13,12 @@ terraform {
 
   backend "remote" {
     organization = "bplab"
-	
+
     workspaces {
       name = "gh-actions-demo"
     }
   }
 }
-
 
 
 provider "aws" {
